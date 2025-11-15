@@ -8,6 +8,10 @@ def home():
     return render_template("index.html")
 
 # Meal Recommendation Page/Ask Page
+@app.route("/recommendations")
+def recommendations():
+    return render_template("recommendations.html")
+    
 @app.route("/ask_page")
 def ask_page():
     return render_template("ask_page.html")
@@ -26,6 +30,7 @@ def community():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
